@@ -58,6 +58,9 @@
           <span class="chip">радости</span>
           <span class="chip">вдохновения</span>
           <span class="chip">улыбок</span>
+          <span class="chip">счастья</span>
+          <span class="chip">удачи</span>
+          <span class="chip">любви</span>
         </div>
       </div>
 
@@ -79,7 +82,31 @@
   </main>
 
   <canvas id="stars" class="stars" aria-hidden="true"></canvas>
+ <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
 
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__top">
+        <div class="modal__titleWrap">
+          <div class="modal__emoji" id="modalEmoji">💐</div>
+          <div>
+            <div class="modal__title" id="modalTitle">Пожелание</div>
+            <div class="modal__subtitle" id="modalSubtitle">Нежное и тёплое</div>
+          </div>
+        </div>
+
+        <button class="modal__close" id="modalClose" aria-label="Закрыть">✕</button>
+      </div>
+
+      <div class="modal__content" id="modalText"></div>
+
+      <div class="modal__actions">
+        <button class="modal__btn" id="modalOk">Спасибо ❤️</button>
+      </div>
+    </div>
+  </div>
   <script src="./app.js"></script>
+
 </body>
 </html>
