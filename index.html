@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>С 8 марта ❤️</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="glow g3"></div>
+  </div>
+
+  <div id="petals" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header class="top">
+      <div class="badge">
+        <span class="dot"></span>
+        <span>8 марта</span>
+      </div>
+
+      <button id="shareBtn" class="ghost">
+        <span>Поделиться</span>
+        <span class="icon">↗️</span>
+      </button>
+    </header>
+
+    <section class="card" id="card">
+      <div class="card__shine" aria-hidden="true"></div>
+
+      <div class="hero">
+        <div class="lottie" id="lottieFlower" aria-hidden="true"></div>
+        <div class="titles">
+          <h1 class="title">Мамочка, с праздником! 💐</h1>
+          <p class="subtitle" id="subtitle"></p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="message">
+        <p class="msg" id="msg">
+          Спасибо за твою заботу, тепло и поддержку. Ты — мой самый важный человек.
+        </p>
+
+        <div class="chips">
+          <span class="chip">здоровья</span>
+          <span class="chip">радости</span>
+          <span class="chip">вдохновения</span>
+          <span class="chip">улыбок</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="wowBtn" class="primary">
+          <span class="sparkle">✨</span>
+          <span>Нажми для сюрприза</span>
+        </button>
+
+        <button id="closeBtn" class="secondary">
+          Закрыть
+        </button>
+      </div>
+
+      <footer class="footer">
+        <span>С любовью, твой программист ❤️</span>
+      </footer>
+    </section>
+  </main>
+
+  <canvas id="stars" class="stars" aria-hidden="true"></canvas>
+
+  <script src="./app.js"></script>
+</body>
+</html>
